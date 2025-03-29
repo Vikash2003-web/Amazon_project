@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+/** Logo Section **/
+.nav-logo {
+    height: 50px;
+    width: 100px;
+    border: 2px solid transparent;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+}
+
+/** Border Hover Effect **/
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+/** Address Box **/
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-sec {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/** Search Bar **/
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    gap: 5px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-input {
+    flex: 1;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-search:hover { 
+    border: 2px solid orange;
+}
+
+/** Account & Orders **/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem; 
+    font-weight: 700;
+}
+
+/** Cart Section **/
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+/** Panel Section **/
+.panel {
+    min-height: 40px; /* Allows flexibility */
+    background-color: #151e23; 
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px; /* Slightly reduced for better spacing */
+    color: white; /* Fix: Text is now readable */
+    font-size: 0.9rem; /* Adjust font size for readability */
+}
+
+/* Links inside the panel */
+.panel a {
+    text-decoration: none;
+    color: #ddd; /* Light grey for contrast */
+    font-weight: 500;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.panel-ops p {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.panel-ops p:hover {
+    text-decoration: underline;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/** Hero Section **/
+.hero-section {
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: #007185;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-msg a:hover {
+    text-decoration: underline;
+}
+
+/** Shop Section **/
+.shop-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    background-color: #e2e7e6;
+    padding: 20px;
+}
+
+.box {
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    min-width: 250px; /* Ensures boxes don’t shrink too much */
+    background-color: white;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box-img {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-content {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/** Footer Styles **/
+.footer {
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+/** Panel 1: "Back to Top" Button **/
+.foot-panel1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.foot-panel1:hover {
+    background-color: #485769;
+}
+
+/** Panel 2: Footer Links **/
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 10%;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.foot-panel2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.foot-panel2 h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.foot-panel2 li {
+    font-size: 0.85rem;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.foot-panel2 li:hover {
+    text-decoration: underline;
+}
+
+/** Panel 3: Amazon Logo **/
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+}
+
+/** Panel 4: Copyright Notice **/
+.foot-panel4 {
+    background-color: #161818;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 15px 0;
+}
+
+/** Responsive Design **/
+@media (max-width: 768px) {
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-panel2 ul {
+        margin-bottom: 20px;
+    }
+}
